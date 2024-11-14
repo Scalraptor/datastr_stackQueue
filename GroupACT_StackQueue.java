@@ -35,7 +35,7 @@ public class GroupACT_StackQueue {
                                     rear = (rear + 1) % size;
                                     array[rear] = element;
                                     System.out.println("Pushed: " + element);
-                                    displayElements(array, front, rear, size);
+                                    display(array, front, rear, size);
                                 }
                                 break;
                             case 2: //POP
@@ -123,7 +123,7 @@ public class GroupACT_StackQueue {
         }
     }
 
-    public static void displayElements(int[] array, int front, int rear, int size) {
+    public static void display(int[] array, int front, int rear, int size) {
         if (front == -1) {
             System.out.println("No elements to display.");
         } else {
