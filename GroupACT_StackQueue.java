@@ -79,6 +79,30 @@ public class GroupACT_StackQueue {
                                 
                                 break;
                             case 2: //DEQUEUE
+                              if (front == -1){
+                              System.out.println("Queue is empty.");
+                              }
+                              
+                              
+                              else {
+                              System.out.println("Dequeueing the first element: " + array[0]);
+
+                                   
+                                   for (int i = 1; i < array.length; i++) {
+                                       array[i - 1] = array[i];
+                                   }
+                           
+                                   
+                                   array[array.length - 1] = 0;
+                           
+                                    System.out.print("Elements: ");
+                                      for (int element : array) {
+                                          System.out.print(element + " ");
+                                      }
+                                      System.out.println();
+                                                             }
+
+                              
                                 
                                 break;
                             case 3: //PEEK
