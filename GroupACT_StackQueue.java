@@ -46,7 +46,7 @@ public class GroupACT_StackQueue {
                                 break;
                             case 4: //IsFull
                                 if ((rear + 1) % size == front) {
-                                    System.out.println("Stack is full");
+                                    System.out.println("Stack is full.");
                                 } else {
                                     System.out.println("Stack is not full");
                                 }
