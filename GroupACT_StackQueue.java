@@ -45,10 +45,18 @@ public class GroupACT_StackQueue {
                                 
                                 break;
                             case 4: //IsFull
-                                
+                                if ((rear + 1) % size == front) {
+                                    System.out.println("Stack is full");
+                                } else {
+                                    System.out.println("Stack is not full");
+                                }
                                 break;
                             case 5: //IsEmpty
-                                
+                                if (front == -1) {
+                                    System.out.println("Stack is empty");
+                                } else {
+                                    System.out.println("Stack is not empty");
+                                }
                                 break;
                             case 6: //EXIT | RETURN TO MAIN
                                 break;
@@ -81,10 +89,18 @@ public class GroupACT_StackQueue {
                                 }
                                 break;
                             case 4: //IsFull
-                            	
+                            	if ((rear + 1) % size == front) {
+                                    System.out.println("Queue is full");
+                                } else {
+                                    System.out.println("Queue is not full");
+                                }
                                 break;
                             case 5: //IsEmpty
-                            	
+                            	if (front == -1) {
+                                    System.out.println("Queue is empty");
+                                } else {
+                                    System.out.println("Queue is not empty");
+                                }
                                 break;
                             case 6: //EXIT | RETURN TO MAIN
                                 break;
